@@ -39,11 +39,11 @@ body {
 }
 
 section {
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
 }
 
 div {
-    border: 1px dashed green;
+    /* border: 1px dashed green; */
 }
 
 ul {
@@ -116,4 +116,73 @@ ul {
 .footer .contents__linkbutton i {
     width: 35px;
     height: 35px;
+}
+
+.info {
+    display: flex;
+    height: 100%;
+}
+
+.info .header {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 25px;
+}
+
+.info .header .header__menulist {
+    display: flex;
+}
+
+.info .stafflist {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stafflist .stafflist-item {
+    height: 100%;
+    border-left: 1px solid --greyColor;
+}
+
+.stafflist-item .item-info span:first-child {
+    color: var(--darkGreyColor);
+    font-size: 13px;
+    font-weight: 600;
+    display: block;
+}
+
+.stafflist-item .item-info span:last-child {
+    color: var(--blackColor);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.stafflist .stafflist-item {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.stafflist .stafflist-item img {
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.stafflist .stafflist-item small {
+    color: var(--darkGreyColor);
+    font-weight: 600;
+}
+
+.info .header {
+    position: fixed;
+    top: 55px;
+    right: 20px;
+    color: var(--darkGreyColor);
+}
+
+.info .header .header__menulist .header__menulist-item:last-child {
+    color: var(--blackColor);
 }
